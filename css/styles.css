@@ -134,7 +134,8 @@ address {
 .list-nav > .item-nav {
   position: relative;
 }
-.item-nav > .link-header::after {
+
+.link.link-header::after {
   content: "";
   position: absolute;
   left: 0;
@@ -151,7 +152,22 @@ address {
   content: "";
   transform: scale(1, 1);
 }
-
+.link.curent {
+  display: flex;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  color: var(--accent-color);
+}
+.link.curent::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+}
 .main-nav {
   display: flex;
   align-items: center;
